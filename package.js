@@ -1,14 +1,14 @@
 Package.describe({
   name: 'sytabaresa:immutable',
-  summary: 'inmmutable.js library for meteor',
+  summary: 'immutable collections like Map, List, Set for javascript',
   version: '3.0.3',
-  git: 'https://github.com/facebook/immutable-js'
+  git: 'https://github.com/sytabaresa/meteor-immutable.git'
 });
 
 Package.onUse(function(api) {
   api.export("Immutable");
   api.versionsFrom('1.0');
-  api.addFiles('sytabaresa:immutable.js');
+  api.addFiles('immutable/immutable.min.js');
 });
 
 Package.onTest(function(api) {
